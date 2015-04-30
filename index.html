@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>报告编辑器</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/mystyle.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" class="jqm-demos jqm-home">
+	<div data-role="header" class="jqm-header">
+			<h1>编写报告</h1>
+			<a href="#" class="ui-btn ui-btn-icon-notext ui-corner-all ui-icon-edit ui-nodisc-icon ui-alt-icon ui-btn-left my-btn-1" id="btn-save">Save</a>
+		<a href="#" class="my-sidebar-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left" id="left-panel-toggler">Left</a>
+		<a href="#" class="my-sidebar-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-right" id="right-panel-toggler">Right</a>
+	</div><!-- /header -->
+	<div class="ui-content" role="main">
+		<div class="ui-block-a" id="left-panel">
+			<ul data-role="listview" data-inset="false">
+				<li class="ui-field-contain">
+					<label for="name2">扫描技术:</label>
+				</li>
+				<li class="ui-field-contain">
+					<textarea cols="40" rows="8" name="techinfo" id="techinfo">扫描层厚为10mm，层距为5mm，相邻两个扫描层面就可有5mm厚度的重叠。</textarea>
+				</li>
+				<li class="ui-field-contain">
+					<label for="flip2">阳性:</label>
+					<select name="flip2" id="flip2" data-role="slider">
+						<option value="off">否</option>
+						<option value="on">是</option>
+					</select>
+				</li>
+				<li class="ui-field-contain">
+					<label for="name2">医生建议:</label>
+				</li>
+				<li class="ui-field-contain">
+					<textarea cols="40" rows="8" name="doctor-advice" id="doctor-advice"></textarea>
+				</li>
+			</ul>
+		</div><!-- /left panel -->
+		<div class="ui-block-b" id="main-panel">
+			<textarea id="what-you-see" placeholder="所见"></textarea>
+			<textarea id="what-you-get" placeholder="所得"></textarea>
+		</div><!-- /main panel -->
+		<div class="ui-block-c" id="right-panel">
+			<div data-role="collapsible" data-inset='false' data-theme="a" data-content-theme="a" data-collapsed="false">
+				<h2>CT</h2>
+				<ul data-role="listview" class="listview-level-1">
+					<li class="listview-level-1-item">
+						<div data-role="collapsible" class="nested-listview-container" data-inset='false' data-theme="a" data-content-theme="a" data-collapsed="false">
+							<h2>胸部</h2>
+							<ul data-role="listview">
+								<li><a href="#">正常</a></li>
+								<li><a href="#">肺炎</a></li>
+								<li><a href="#">肺气肿</a></li>
+								<li><a href="#">肋骨骨折</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="listview-level-1-item">
+						<div data-role="collapsible" class="nested-listview-container" data-inset='false' data-theme="a" data-content-theme="a">
+							<h2>头</h2>
+							<ul data-role="listview">
+								<li><a href="#">正常</a></li>
+								<li><a href="#">积水</a></li>
+								<li><a href="#">脑膜炎</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div data-role="collapsible" data-inset='false' data-theme="a" data-content-theme="a">
+				<h2>DR/CR</h2>
+				<ul data-role="listview">
+					<li class="listview-level-1-item">
+						<div data-role="collapsible" class="nested-listview-container" data-inset='false' data-theme="a" data-content-theme="a">
+							<h2>胸部</h2>
+							<ul data-role="listview">
+								<li><a href="#">正常</a></li>
+								<li><a href="#">肺炎</a></li>
+								<li><a href="#">肺气肿</a></li>
+								<li><a href="#">肋骨骨折</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="listview-level-1-item">
+						<div data-role="collapsible" class="nested-listview-container" data-inset='false' data-theme="a" data-content-theme="a">
+							<h2>头</h2>
+							<ul data-role="listview">
+								<li><a href="#">正常</a></li>
+								<li><a href="#">积水</a></li>
+								<li><a href="#">脑膜炎</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div data-role="collapsible" data-inset='false' data-theme="a" data-content-theme="a">
+				<h2>MR</h2>
+				<ul data-role="listview">
+					<li class="listview-level-1-item">
+						<div data-role="collapsible" class="nested-listview-container" data-inset='false' data-theme="a" data-content-theme="a">
+							<h2>胸部</h2>
+							<ul data-role="listview">
+								<li><a href="#">正常</a></li>
+								<li><a href="#">肺炎</a></li>
+								<li><a href="#">肺气肿</a></li>
+								<li><a href="#">肋骨骨折</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="listview-level-1-item">
+						<div data-role="collapsible" class="nested-listview-container" data-inset='false' data-theme="a" data-content-theme="a">
+							<h2>头</h2>
+							<ul data-role="listview">
+								<li><a href="#">正常</a></li>
+								<li><a href="#">积水</a></li>
+								<li><a href="#">脑膜炎</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div><!-- /right panel -->
+
+	</div><!-- /main -->
+</div>
+</body>
+<script>
+$(function(){
+	$("#left-panel-toggler").click(function(){
+		if($("#left-panel").css("position") == "absolute") {
+			$("#left-panel").toggle();
+			$("#right-panel").hide();
+		}
+	});
+	$("#right-panel-toggler").click(function(){
+		if($("#right-panel").css("position") == "absolute") {
+			$("#right-panel").toggle();
+			$("#left-panel").hide();
+		}
+	});
+	$(".nested-listview-container li").click(function(){
+		$("#what-you-see").text("看见"+$(this).text());
+		$("#what-you-get").text("得到"+$(this).text());
+		$("#doctor-advice").text("建议"+$(this).text());
+	});
+	$("#btn-save").click(function(){
+		alert("保存成功!");
+	});
+});
+</script>
+</html>

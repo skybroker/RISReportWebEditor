@@ -1,0 +1,92 @@
+.jqm-demos .jqm-header h1 {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+.jqm-demos .jqm-header .ui-btn{
+	width: 2em;
+	height: 2em;
+	top: 50%;
+	margin-top: -1em;
+}
+.jqm-demos .jqm-header .my-btn-1 {
+	margin-left: 4em;
+}
+.jqm-demos .jqm-header .my-btn-2 {
+	margin-left: 7em;
+}
+.jqm-demos .jqm-header .my-btn-save {
+	color: black;
+	font-size: 20pt;
+}
+.listview-level-1-item {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+.nested-listview-container {
+	margin-top: -0.5em !important;
+	margin-bottom: -0.5em !important;
+}
+.nested-listview-container * {
+	text-align: right !important;
+}
+.nested-listview-container .ui-collapsible-content {
+	margin-top: -0.5em !important;
+}
+#what-you-see {
+	min-height: 20em;
+}
+#what-you-get {
+	min-height: 10em;
+}
+#techinfo, #doctor-advice {
+	min-height: 8em;
+}
+@media (min-width: 50em){
+	.jqm-demos .my-sidebar-link {
+		display: none;
+	}
+	#main-panel {
+		width: 60%;
+	}
+	#left-panel, #right-panel {
+		display: block !important;
+		position: relative;
+		top: auto;
+		left: auto;
+		width: 20%;
+		background: none;
+		right: auto;
+		visibility: visible;
+	}
+	#left-panel {
+		padding: 2em 2em 1em 1em;
+	}
+	#right-panel {
+		padding: 1em 1em 1em 2em;
+	}
+}
+@media (max-width: 50em){
+	.jqm-demos .ui-block-b {
+		width: 100%;
+	}
+	#main-panel {
+		width: 100%;
+	}
+	#left-panel, #right-panel {
+		display: none;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 250px;
+		background-color:white;
+	}
+	#left-panel {
+		left: 1em;
+		float: left;
+	}
+	#right-panel {
+		left: auto;
+		right: 1em !important;
+		float: right;
+	}
+}
